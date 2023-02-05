@@ -134,3 +134,164 @@
         li
             button
                 display: none
+.katalog
+    h2
+        padding-top: 107px
+        display: block
+        text-align: center
+        font-size: 30px
+        font-weight: normal
+        text-transform: uppercase
+    &__header
+        ul
+            display: flex
+            text-align: center
+            justify-content: center
+            margin-top: 46px
+            text-transform: uppercase
+        li
+            border: 2px solid #D0D0D0
+            list-style-type: none
+            font-size: 18px
+            font-weight: normal
+            color: #6B6B6B
+            line-height: 52px
+            transform: skew(-30deg)
+            margin: 0 10px
+            cursor: pointer
+            transition: (0.5s) all
+            &:hover
+                background-color: #881010
+                transition: (0.5s) all
+            div
+                width: 223px
+                height: 52px
+                transform: skew(30deg)
+    .katalog__list-active
+        color: white
+        background-color: $main-color
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        width: 963px
+        margin: 0 auto
+        margin-top: 47px
+    &__katalog-item
+        width: 303px
+        min-height: 442px
+        border: 2px solid #E8E8E8
+        margin: 0 9px
+        overflow: hidden
+        &:nth-child(n +4)
+            margin-top: 20px
+        img
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+        h3
+            font-weight: 700
+            font-size: 16px
+            line-height: 25px
+            text-align: center
+            color: #0D0D0D
+            margin-top: 15px
+        span
+            display: block
+            font-weight: 300
+            font-size: 16px
+            text-align: center
+            color: #0D0D0D
+            margin-top: 15px
+        a
+            color: $main-color
+            display: block
+            text-align: center
+            margin-top: 10px
+        hr
+            margin: 17px auto
+            max-width: 263px
+            height: 1px
+            display: block
+    &__price-block
+        display: flex
+        align-items: center
+        padding-bottom: 20px
+    &__price
+        margin-left: 23px
+        margin-right: 27px
+    &__old-price
+        color: #555555
+        font-weight: 300
+        font-size: 14px
+        line-height: 14px
+        text-decoration: line-through
+        letter-spacing: -1px
+    &__new-price
+        color:#511818
+        font-size: 20px
+        font-weight: bold
+        line-height: 18px
+    &__container
+        display: flex
+        width: calc(200% + 32px)
+        transition: (1s) all
+        ul
+                margin-top: 16px
+                width: 100%
+                transform: translateX(calc(100% + 32px))
+                transition: (1s) all
+                padding: 0
+                font-weight: 300
+                font-size: 14px
+                color: #555555
+                list-style-type: none
+                margin-bottom: 0
+                li
+                    width: 270px
+                    margin-bottom: 10px
+                    position: relative
+                    &::before
+                        content: ""
+                        display: block
+                        position: absolute
+                        background-color: $main-color
+                        height: 5px
+                        width: 5px
+                        left: -11px
+                        top: 7px
+        &-active
+            .katalog__main
+                transform: translateX(-100%)
+                transition: (1s) all
+                width: 50%
+            ul
+                margin-top: 16px
+                width: 50%
+                transform: translateX(calc(-100% + 32px))
+                transition: (1s) all
+                padding: 0
+                font-weight: 300
+                font-size: 14px
+                color: #555555
+                list-style-type: none
+                margin-bottom: 0
+                li
+                    width: 270px
+                    margin-bottom: 10px
+                    position: relative
+                    &::before
+                        content: ""
+                        display: block
+                        position: absolute
+                        background-color: $main-color
+                        height: 5px
+                        width: 5px
+                        left: -11px
+                        top: 7px
+            .link
+                left: 31%
+                position: absolute
+                bottom: 0
+    &__main
+        width: 100%
+        transition: (1s) all
