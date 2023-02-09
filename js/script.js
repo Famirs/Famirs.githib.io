@@ -23,4 +23,18 @@ $(document).ready(function(){
                 $('.katalog__container').eq(i).toggleClass('katalog__container-active');
             })
         });
+    $('[data-modal=consultation]').on('click', function() {
+        $('.modals, #consultations').fadeIn();
+    });
+    $('.button_price').on('click', function() {
+        $('.modals, #button_price').fadeIn();
+    })
+    $('.modals__close').on('click', function() {
+        $('.modals, #button_price, #consultations').fadeOut();
+    })
+    $('.button_price').each(function(i){
+        $(this).on('click', function(){
+            $('.modals h3').text($('h3').eq(i).text())
+        })
+    })
 });
