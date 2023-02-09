@@ -10,7 +10,14 @@
         &__inner
             img
                 width: 100%
-@media (max-width: 778px)
+    .katalog
+        &__wrapper
+            justify-content: center
+            width: auto
+            max-width: 963px
+        &__katalog-item
+            margin-top: 20px
+@media (max-width: 779px)
     .promo
         background: url(../img/background/bg.png) -300px
         .container
@@ -70,6 +77,26 @@
     .carousel
         &__inner
             padding-top: 50px
+    .katalog
+        &__header
+            ul
+                flex-direction: column
+                align-items: center
+                li
+                    width: 420px
+                    margin-top: 10px
+    .feedback
+        &__item 
+            flex-direction: column
+            align-items: center
+        &__wrapper
+            text-align: center
+            padding-left: 0
+            &-history
+                text-align: center
+    footer
+        .contact__wrapper
+            width: 320px
 @media (max-width: 425px)
     .promo
         height: 550px
@@ -114,3 +141,8 @@
     .carousel
         &__inner
             padding-top: 30px
+    .katalog
+        &__header
+            ul
+                li
+                    width: 220px
